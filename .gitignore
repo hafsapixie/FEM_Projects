@@ -1,0 +1,5 @@
+node_modules/
+template/
+.vscode/
+.env
+*.log
