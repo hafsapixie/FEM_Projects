@@ -6,54 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results Summary</title>
     <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Hanken+Grotesk">
 </head>
 
-<body class="font-[Hanken-Grotesk] xl:bg-cobaltblue">
-    <div class="xl:flex xl:justify-center xl:items-center xl:my-80">
-        <div class="bg-gradient-to-b from-lightslateblue    to-lightroyalblue p-6 font-sans rounded-b-[1.75rem] xl:w-96 xl:rounded-[2.25rem] xl:px-14 xl:translate-x-[20%]">
+<body class="flex justify-center items-center min-h-screen sm:bg-cobaltblue ">
 
-            <h4 class="text-white font-[500] text-[1.45rem] text-center xl:pt-3">Your Result</h4>
+    <div class="container mx-auto max-w-sm flex flex-col sm:flex-row sm:justify-center ">
+
+        <div
+            class="bg-gradient-to-b from-lightslateblue to-lightroyalblue rounded-b-3xl sm:rounded-2xl sm:px-5 sm:translate-x-[35%]">
+            <h3 class="font-semibold text-sm text-center pt-4 sm:py-4 text-cobaltblue"> Your Result</h3>
             <div
-                class="bg-gradient-to-b from-violetblue to-persianblue pt-8 rounded-full my-5 w-40 h-40 text-center mx-auto xl:py-7 xl:w-44 xl:h-44 xl">
-                <p class="text-white text-6xl font-bold">76</p>
-                <p class="text-lightslateblue text-xl pt-3">of 100</p>
+                class="flex flex-col justify-center items-center bg-gradient-to-b from-violetblue to-persianblue rounded-full w-24 h-24 mx-auto mt-3 sm:py-5 ">
+                <p class="text-white text-4xl font-bold ">76</p>
+                <p class="text-lightslateblue text-xs pt-3 ">of 100</p>
             </div>
-            <h3 class="text-white text-3xl font-semibold text-center xl:py-3">Great</h3>
-            <p class="text-paleblue text-lg font-[500] py-3 text-center xl:pb-3">You scored higher than 65% of the people who
-                have
-                taken these tests.</p>
+            <h3 class="text-cobaltblue text-lg font-semibold text-center pt-3 sm:py-4">Great</h3>
+            <div class="text-cobaltblue text-xs text-center px-3 py-3 sm:px-0 sm:text-sm sm:w-48">
+                <p>You scored higher than 65% of the people who
+                    have taken these tests.</p>
+            </div>
         </div>
-        <div class="mx-7 bg-white xl:rounded-r-[2rem] xl:pr-10 xl:pl-24 xl:py-5">
-            <h3 class="text-gray-800 text-2xl font-bold py-6">Summary</h3>
-            <div class="flex flex-row mb-4 py-3 px-4 text-xl font-semibold bg-lightred rounded-xl"><img class="w-6"
-                    src="img/icon-reaction.svg" alt="">
-                <p class="text-red pl-3 font-bold">Reaction</p>
-                <p class="absolute right-11 xl:relative xl:-right-24 "><span class="text-gray-800 font-bold">80</span> <span
-                        class="text-gray-700">/ 100</span></p>
+
+        <div class="bg-white px-4 sm:rounded-r-2xl  sm:pl-24 sm:space-y-3">
+            <h4 class="text-gray-800 text-sm font-bold py-4 sm:pt-4 sm:py-0">Summary</h4>
+            <div class="flex justify-between mb-4 py-3 px-3 text-xs font-semibold bg-lightred rounded-xl ">
+                <div class="flex"><img class="w-4" src="img/icon-reaction.svg" alt="">
+                    <p class="text-red pl-2 font-bold">Reaction</p>
+                </div>
+                <p><span class="text-gray-800 font-bold ">80</span>
+                    <span class="text-gray-700">/ 100</span>
+                </p>
             </div>
-            <div class="flex flex-row my-4 py-3 px-4 text-xl font-semibold bg-lightyellow rounded-xl"><img class="w-6"
-                    src="img/icon-memory.svg" alt="">
-                <p class="text-yellow pl-3 font-bold">Memory</p>
-                <p class="absolute right-11 xl:relative xl:-right-24"><span class="text-gray-800 font-bold">92</span> <span
-                        class="text-gray-700">/ 100</span></p>
+            <div class="flex justify-between my-4 py-3 px-3 text-xs font-semibold bg-lightyellow rounded-xl">
+                <div class="flex"><img class="w-4" src="img/icon-memory.svg" alt="">
+                    <p class="text-yellow pl-2 font-bold">Memory</p>
+                </div>
+                <p><span class="text-gray-800 font-bold">92</span> <span class="text-gray-700">/ 100</span></p>
             </div>
-            <div class="flex flex-row my-4 py-3 px-4 text-xl font-semibold bg-lightgreen rounded-xl"><img class="w-6"
-                    src="img/icon-verbal.svg" alt="">
-                <p class="text-green pl-3 font-bold">Verbal</p>
-                <p class="absolute right-11 xl:relative xl:-right-28"><span class="text-gray-800 font-bold">61</span> <span
-                        class="text-gray-700">/ 100</span></p>
+            <div class="flex justify-between my-4 py-3 px-3 text-xs font-semibold bg-lightgreen rounded-xl">
+                <div class="flex"><img class="w-4" src="img/icon-verbal.svg" alt="">
+                    <p class="text-green pl-2 font-bold">Verbal</p>
+                </div>
+                <p><span class="text-gray-800 font-bold ">61</span> <span class="text-gray-700">/ 100</span></p>
             </div>
-            <div class="flex flex-row my-4 py-3 px-4 text-xl font-semibold bg-lightblue rounded-xl"><img class="w-6"
-                    src="img/icon-visual.svg" alt="">
-                <p class="text-blue pl-3 font-bold">Visual</p>
-                <p class="absolute right-11 xl:relative xl:-right-28"><span class="text-gray-800 font-bold">73</span> <span
-                        class="text-gray-700">/ 100</span></p>
+            <div class="flex justify-between my-4 py-3 px-3 text-xs font-semibold bg-lightblue rounded-xl">
+                <div class="flex"><img class="w-4" src="img/icon-visual.svg" alt="">
+                    <p class="text-blue pl-2 font-bold">Visual</p>
+                </div>
+                <p><span class="text-gray-800 font-bold">73</span> <span class="text-gray-700">/ 100</span></p>
             </div>
+
             <button
-                class="text-white text-2xl font-semibold text-center bg-gray-800 mx-auto mt-10 py-4 px-28 rounded-[1.75rem] flex justify-center hover:bg-lightroyalblue hover:cursor-pointer">Continue</button>
+                class="text-white text-sm font-semibold text-center bg-gray-800 mx-auto my-5 py-2 px-[100px] rounded-[1.75rem] flex justify-center hover:bg-lightroyalblue hover:cursor-pointer ">Continue
+            </button>
         </div>
     </div>
+
 </body>
 
 </html>
