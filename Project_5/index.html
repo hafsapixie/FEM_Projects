@@ -6,35 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Card</title>
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Fraunces">
 </head>
 
-<body class="bg-cream min-h-screen flex items-center justify-center p-4">
-    <div class="max-w-2xl mx-auto">
-        <div class=" rounded-xl overflow-hidden flex flex-col md:flex-row mx-auto">
-            <img class="md:hidden bg-cover bg-center  rounded-t-xl" src="img/image-product-mobile.jpg" alt="">
-            <img class="hidden md:block md:w-[35%]  bg-cover bg-center" src="img/image-product-desktop.jpg"
-                alt="">
+<body class="box-border mx-auto max-w-xs h-screen flex justify-center items-center bg-cream sm:max-w-2xl">
+    <div class="container mx-auto p-4">
+        <div class=" rounded-lg overflow-hidden flex flex-col sm:flex-row">
+            <img class="sm:hidden bg-cover bg-center  rounded-t-lg" src="img/image-product-mobile.jpg" alt="img">
+            <img class="hidden sm:block sm:w-[35%]  bg-cover bg-center" src="img/image-product-desktop.jpg"
+                alt="img">
 
-            <div
-                class="bg-white px-6 pb-6 pt-3 rounded-b-xl md:w-[35%] flex flex-col justify-between  md:rounded-r-xl md:rounded-none">
+            <div class="bg-white px-6 pb-6 pt-3 rounded-b-lg sm:w-[35%] flex flex-col  sm:rounded-r-xl sm:rounded-none">
                 <div>
-                    <span class="font-[Fraunces] tracking-widest text-sm text-gray">PERFUME</span>
-                    <p class="text-2xl py-2 font-bold font-[Montserrat]">Gabrielle Essence Eau De Parfum</p>
-                    <p class="text-gray text-sm space-x-2 space-y-3 font-[Fraunces] tracking-wider">A floral, solar and
+                    <span class="font-fraunces tracking-widest text-xs text-gray">PERFUME</span>
+                    <p class="text-2xl py-2 font-bold font-montserrat">Gabrielle Essence Eau De Parfum</p>
+                    <p class="text-gray text-xs space-x-2 space-y-3 font-[Fraunces] tracking-wider">A floral, solar and
                         voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
                     </p>
                 </div>
-                <div class="mt-2">
-                    <span class="text-2xl text-green-700 font-bold pr-5 ">$149.99</span>
-                    <span class="pt-2 line-through text-black xl:text-lg">$169.99</span>
+                <div class="py-5 flex flex-row">
+                    <p class="text-2xl text-green-700 font-bold pr-3">$149.99</p>
+                    <p class="pt-2 line-through text-black text-xs">$169.99</p>
                 </div>
-                <button class="bg-green-700 w-full px-4 py-3 rounded-lg mt-3 flex justify-center items-center"><img class="w-5 h5" src="img/icon-cart.svg"
+                <button class="bg-green-700 w-full px-4 py-3 rounded-lg mt-3 flex justify-center items-center hover:bg-green-950 hover:cursor-pointer"><img class="w-4 h-4" src="img/icon-cart.svg"
                         alt="">
-                    <p class="text-white font-bold font-serif pl-4 text-sm md:text-sm">Add to Cart</p>
+                    <p class="text-white font-bold font-serif pl-4 text-xs">Add to Cart</p>
                 </button>
             </div>
         </div>
     </div>
-</body>
 
+
+</body>
 </html>

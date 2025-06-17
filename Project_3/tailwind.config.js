@@ -11,6 +11,9 @@ module.exports = {
           950: "hsl(0, 0%, 7%)",
         }, 
       },
+      fontFamily:{
+        figtree: ['Figtree', 'sans-serif']
+      },
     },
   },
   plugins: [],

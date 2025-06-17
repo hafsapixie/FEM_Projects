@@ -13,6 +13,10 @@ module.exports = {
           700: "hsl(158, 42%, 18%)",
         },
       },
+      fontFamily:{
+        montserrat:['Montserrat'],
+        fraunces:['Fraunces'],
+      },
     },
   },
   plugins: [],
